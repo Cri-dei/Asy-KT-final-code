@@ -1,0 +1,9 @@
+FROM GIS: 
+
+- SELECT BASINS
+(Selection by locations)
+- Export points inside basin in .csv format
+- Export subbasins in .shp
+
+First code:
+0.POT_daily_data_v3 for running for selected basins
