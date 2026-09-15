@@ -6,7 +6,7 @@ rm(list = ls())
 ###########################################
 
 # Causality links KT Asy Tests #
-# After the talk with Sebastian #
+
 
 library(gridExtra)
 library(grid)
