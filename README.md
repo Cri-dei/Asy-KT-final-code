@@ -30,36 +30,42 @@ The repository contains the R scripts used for the hydrological application, sim
 
 ### Hydrological analysis
 
-`0_POT_daily_data_v3.R`
-Processes daily discharge data and extracts peak-over-threshold (POT) extreme events for the selected river basins.
+* **`0_POT_daily_data.R`**
+  Processes daily discharge data and extracts peak-over-threshold (POT) extreme events for the selected river basins.
 
-`1_Water_direction_ selected_couples.R`
-Defines and analyses the directional relationships between selected pairs of river stations.
+* **`1_Water_direction_ selected_couples.R`**
+  Analyses directional relationships between selected pairs of river stations.
 
-`2. Processing matrix.R`
-Processes the pairwise dependence results and constructs the matrices used in the subsequent analysis.
+* **`2. Processing matrix.R`**
+  Processes pairwise dependence results and constructs the matrices used in the subsequent analysis.
 
 ### Figures
 
-`3_ Plot.R`
-Produces exploratory plots from the hydrological analysis.
+* **`3. Hydrological Plot.R`**
+  Produces figures related to the hydrological application.
 
-`4_Plot_finali paper.R`
-`4_Plot_finali paperV2.R`
-Generate figures used for the final analysis and manuscript.
+* **`4_Final Plots Paper.R`**
+  Generates the final figures used in the paper.
 
-`4_1_ Plot finali paper AsyCopula.R`
-Produces figures related to the asymmetric copula analysis.
+* **`4. Asymmetric Copula Plots.R`**
+  Produces figures related to the asymmetric copula experiments.
 
 ### Simulation experiments
 
-`5_ Simulation_AsyCopula_update0906.R`
-Simulation experiments investigating the behavior of the asymmetric tail Kendall's τ under asymmetric copula models.
+* **`5_ Simulations_AsyCopula.R`**
+  Simulation experiments investigating the behavior of the asymmetric tail Kendall's τ under asymmetric copula models.
 
-`7_ Simulation Causality_ improved.R`
-`7_ Simulation Causality_ improved2.R`
-`7_ Simulation Causality_ 6 cases_SensitivityAnalysis_sym.R`
-Simulation experiments investigating the relationship between asymmetric extremal dependence and different causal structures.
+* **`7_ Simulation Causality.R`**
+  Simulation experiments investigating the relationship between asymmetric extremal dependence and different causal structures.
+
+* **`7_ Simulation Causality_ SensitivityAnalysis.R`**
+  Sensitivity analysis for the causality simulation experiments.
+
+### Additional material
+
+
+* **`Archive/`**
+  Contains previous versions of analysis and plotting scripts retained for reference. These files are not required to reproduce the final results presented in the paper.
 
 ## Method
 
@@ -95,7 +101,7 @@ The raw observational data are not distributed in this repository. Users wishing
 
 The analyses are implemented in **R**.
 
-The scripts use several R packages depending on the analysis, including packages for data manipulation, hydrological data processing, spatial analysis, extreme-value analysis, and visualization.
+The scripts use several R packages for data manipulation, hydrological data processing, spatial analysis, extreme-value analysis, statistical modelling, and visualization.
 
 Users should check the `library()` calls at the beginning of each script for the packages required for the corresponding analysis.
 
@@ -123,7 +129,7 @@ If you use the methodology or code from this repository, please cite:
 ## Authors
 
 **Cristina Deidda**
-Politecnico di Milano / Vrije Universiteit Brussel
+Vrije Universiteit Brussel (VUB)
 
 **Sebastian Engelke**
 University of Geneva
